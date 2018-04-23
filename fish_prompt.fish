@@ -39,7 +39,7 @@ end
 
 function __ruby_version
   if type "rvm-prompt" > /dev/null 2>&1
-    set ruby_version (rvm-prompt i v g)
+    set ruby_version (rvm-prompt v g)
   else if type "rbenv" > /dev/null 2>&1
     set ruby_version (rbenv version-name)
   else
